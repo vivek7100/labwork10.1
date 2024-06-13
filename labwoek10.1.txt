@@ -1,0 +1,101 @@
+﻿Q.1 Write a Program to find the cube of a given number using UDF.
+For example,
+Input:
+Enter any number: 5
+
+
+Output:
+Cube is: 125
+Ans: 
+#include <stdio.h>
+
+
+void cube();
+
+
+int main() {
+    int k;
+    printf("enter any number:");
+    scanf("%d",&k);
+    printf("cube is:");
+cube(k);
+    return 0;
+}
+void cube(int a){
+    int c;
+    c=a*a*a;
+    printf("\n%d",c);
+}
+
+
+
+
+
+
+O\p: /tmp/1D0260XYxb.o
+enter any number:5
+cube is:
+125
+
+
+=== Code Execution Successful ===
+Q.2 Write a Program to check if a given number is divisible by both 3 & 5 or not using UDF.
+For example,
+Input:
+Enter any number: 15
+
+
+Output:
+The given number is divisible by both 3 & 5.
+
+
+------------------------------------------
+
+
+For example,
+Input:
+Enter any number: 10
+
+
+Output:
+The given number is not divisible by both 3 & 5.
+
+
+
+
+Ans: #include <stdio.h>
+int divisible(int k);
+int main() {
+    int k;
+    printf("Enter any number: ");
+    scanf("%d", &k);
+    if (divisible(k)) {
+        printf("The given number is divisible by both 3 & 5.\n");
+    } else {
+        printf("The given number is not divisible by both 3 & 5.\n");
+    }
+    return 0;
+}
+int divisible(int k) {
+    if (k % 3 == 0 && k % 5 == 0) {
+        return 1;
+    } else {
+        return 0;
+    }
+}
+O\p:  /tmp/MeOFsKg1bu.o
+Enter any number: 15
+The given number is divisible by both 3 & 5.
+
+
+
+
+=== Code Execution Successful ===
+O\p: /tmp/BKLxqyS5UW.o
+Enter any number: 10
+The given number is not divisible by both 3 & 5.
+
+
+
+
+=== Code Execution Successful ===
